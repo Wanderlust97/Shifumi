@@ -1,0 +1,282 @@
+body{
+
+    background-color: rgb(12, 2, 2);
+    color: cornsilk;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Gluten', cursive;
+
+}
+
+.un{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ordinateur{
+width: 100px;
+height: 100px;
+background-color: white;
+border-radius: 10px 10px 10px 10px;
+align-items: center;
+
+
+}
+
+.versus{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+
+
+    }
+
+.joueur{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+
+
+}
+
+.container2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+}
+
+.pierre{
+width: 100px;
+height: 100px;
+background-color: rgb(255, 255, 255);
+border-radius: 10px 10px 10px 10px;
+align-items: center;
+
+
+}
+
+.feuille{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    
+
+
+    }
+
+.ciseaux{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+
+}
+
+.pierre{
+    /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+    transition: transform 250ms;
+    cursor: pointer;
+
+  }
+
+  .pierre:hover {
+    transform: translateY(-10px);
+    background-color: tomato;
+  }
+
+  .feuille{
+    /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+    transition: transform 250ms;
+    cursor: pointer;
+
+  }
+
+  .feuille:hover {
+    transform: translateY(-10px);
+    background-color: tan;
+  }
+
+
+.ciseaux{
+    /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+    transition: transform 250ms;
+    cursor: pointer;
+  }
+
+  .ciseaux:hover {
+    transform: translateY(-10px);
+    background-color:aqua;
+  }
+
+  .cercle {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid 2px white;
+
+}
+.round{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.score{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.ScoreJoueur{
+    width: 46%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.ScorePC{
+    width: 46%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+#perdant{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+.defaite{
+  width: 30%;
+  height: 100px;
+  margin: 50px;
+  border-radius: 10px 10px 10px 10px;
+  background-color:  rgb(255, 255, 255);
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(240, 54, 110);
+}
+
+
+#gagnant{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.victoire{
+  width: 30%;
+  height: 100px;
+  margin: 50px;
+  border-radius: 10px 10px 10px 10px;
+  background-color:  rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    color: rgb(135, 158, 1);
+}
+#egalite{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.nul{
+  width: 30%;
+  height: 100px;
+  margin: 50px;
+  border-radius: 10px 10px 10px 10px;
+  background-color:  rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    color: rgb(84, 1, 218);
+}
+
+
+
+.recommencer{
+  width: 200px;
+  height: 70px;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  font-family: 'Gluten', cursive;
+  font-size: 25px;
+  cursor: pointer;
+
+}
+.recommencer{
+  /*
+    All of the base styles have
+    moved to the “CSS” tab above.
+  */
+  transition: transform 250ms;
+  cursor: pointer;
+}
+
+.recommencer:hover {
+  transform: translateY(-10px);
+  background-color:rgb(0, 195, 255);
+  color :white;
+}
+
+
+@media screen and (max-width:1510px) and (min-width:200px) {
+  .defaite{
+    width: 30%;
+    height: 100px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:  rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    color: rgb(240, 54, 110);
+  }
+  .victoire{
+    width: 30%;
+    height: 100px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:  rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    color: rgb(135, 158, 1);
+  }
+  .nul{
+    width: 30%;
+    height: 100px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:  rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    color: rgb(84, 1, 218);
+  }
+}
