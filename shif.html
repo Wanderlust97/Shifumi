@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/scissors.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten&family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shi Fu Mi</title>
+    <link rel="stylesheet" href="shif.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1 class="animate__animated animate__bounce">Shifumi</h1>
+    <input type="button" class="recommencer" value = "Recommencer" onclick="history.go(0)" />
+<br>
+
+    <div id="round"  class="round">
+        <div id="cercle-1" class="cercle"></div>
+        <div id="cercle-2" class="cercle"></div>
+        <div id="cercle-3" class="cercle"></div>
+    </div>
+    <br>
+    <br>
+    <div id="score" class="score">
+        
+        <div id="ScoreJoueur" class="ScoreJoueur">
+            <h3>IA</h3>
+            <div id="cercle-PC-1" class="cercle"></div>
+            <div id="cercle-PC-2" class="cercle"></div>
+            <div id="cercle-PC-3" class="cercle"></div>
+        </div>
+        <div id="ScorePC" class="ScorePC">
+        <h3>J1</h3>
+        
+
+            <div id="cercle-J-1" class="cercle"></div>
+            <div id="cercle-J-2" class="cercle"></div>
+            <div id="cercle-J-3" class="cercle"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="un" class="un">
+
+
+        <div class="ordinateur">
+            <img id="ordinateur" src="img/laptop.png" width="100px" alt="" srcset="">
+
+        </div>
+
+        <div id="versus" class="versus">
+            <img src="img/vs.png" width="100px" alt="" srcset="">
+
+        </div>
+        <div class="joueur">
+            <img id="joueur" src="img/man.png" width="100px" alt="" srcset="">
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="container2" class="container2">
+        <div onclick="IcUtilisateur('pierre')"  id="pierre" class="pierre">
+            <img src="img/stone.png" width="100px" alt="" srcset="">
+
+        </div>
+        <div onclick="IcUtilisateur('feuille')" id="feuille" class="feuille">
+            <img src="img/flower-pot.png" width="100px" alt="" srcset="">
+
+        </div>
+        <div onclick="IcUtilisateur('ciseaux')" id="ciseaux" class="ciseaux">
+            <img src="img/scissors.png" width="100px" alt="" srcset="">
+
+        </div>
+    </div>
+</body>
+
+</html>
